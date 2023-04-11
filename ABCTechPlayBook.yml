@@ -16,6 +16,6 @@
   - name: clone a repo
     git: repo=https://github.com/amfarahani/ABCTechnologies.git dest=/tmp/mygitrepo1
   - name: build docker file
-    command: chdir=/tmp/mygitrepo1 docker build -t myABCT:0.0.1 .
+    command: chdir=/tmp/mygitrepo1 docker build -t myABCT .
   - name: create container
-    command: docker run -itd -P myABCT:0.0.1
+    command: docker run -itd -P myABCT
